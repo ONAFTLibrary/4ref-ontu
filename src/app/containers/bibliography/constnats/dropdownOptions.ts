@@ -54,7 +54,7 @@ export const DROPDOWN_AUTHORS_OPTIONS: Array<TDropdownOptions> = [
 export const DROPDOWN_LANGUAGES_OPTIONS: Array<TDropdownOptions> = [
   { value: LANGUAGE_UA, title: "UA" },
   { value: LANGUAGE_EN, title: "EN" },
-  { value: LANGUAGE_RU, title: "RU" },
+  // { value: LANGUAGE_RU, title: "RU" },
 ];
 
 export const DROPDOWN_BOOKS_OPTIONS: Array<TDropdownOptions> = [

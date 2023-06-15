@@ -94,6 +94,7 @@ export class ReferencesComponent implements OnInit {
 
   public displayedColumns: string[] = [
     "reference",
+    "copy_button",
     "transliteration",
     "button",
   ];
@@ -158,6 +159,10 @@ export class ReferencesComponent implements OnInit {
     this.isSelectedAuthor = false;
     this.disabledAuthorsDropdown = false;
     this.authorsCount = 0;
+  }
+
+  public copyPartContent(item: TCreatedTableItem): string {
+    return item.reference;
   }
 
   public copyContent(item: TCreatedTableItem): string {

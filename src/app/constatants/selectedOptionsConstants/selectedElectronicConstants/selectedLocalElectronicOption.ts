@@ -31,7 +31,7 @@ export const SELECTED_LOCAL_ELECTRONIC_RESOURCE: Array<TSelectParams> = [
   {
     title: "Принадлежність:",
     key: "copyrigth",
-    placeholder: "Одес. нац. акад. харч. технологій",
+    placeholder: "Одес. нац. техн. університет",
     className: "col-lg-6 col-sm-6 col-md-6",
     required: false
   },

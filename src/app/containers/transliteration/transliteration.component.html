@@ -1,0 +1,48 @@
+<div class="container-fluid transliteration-container col-12">
+  <h2 class="transliteration-container__title">Транслітерування</h2>
+  <div class="container-fluid transliteration-container__header col-12">
+    <p class="lead col-12 text-justify transliteration-container__header__text">
+      Перед початком роботи рекомендуємо ознайомитися з
+      <a class="lead transliteration-container__link" href="https://zakon.rada.gov.ua/laws/show/55-2010-%D0%BF#Text"
+      target="_blank">правилами транслітерації для українськогоалфавіту</a>. Зверніть увагу, що
+      деякі літери можуть відтворюватися по-різному в залежності від положення в
+      слові. Рекомендується перевірити абревіатури, тому що літери в середині
+      слова відтворюються як і літери на початку слова.
+    </p>
+  </div>
+  <div class="row col-12">
+    <div class="container col-lg-6 col-md-6 col-sm-12">
+      <h5>Текст українською:</h5>
+      <textarea
+        [(ngModel)]="textForTransliteration"
+        rows="12"
+      ></textarea>
+    </div>
+    <div class="container col-lg-6 col-md-6 col-sm-12">
+      <h5>Транслітерація:</h5>
+      <textarea
+        readonly
+        [value]="transliteratedText"
+        rows="12"
+      ></textarea>
+    </div>
+    <div class="container transliteration-container__actions col-12">
+      <button
+        type="button"
+        class="btn justify-content-center transliteration-container__create-button"
+        (click)="transliterateText()"
+      >
+        Транслітерувати
+      </button>
+      <button
+        type="button"
+        mat-raised-button
+        class="btn justify-content-center"
+        (click)="clear()"
+      >
+        Очистити
+      </button>
+    </div>
+  </div>
+
+</div>

@@ -145,6 +145,17 @@
                             <mat-cell *matCellDef="let element" [innerHTML]="element.reference"></mat-cell>
                         </ng-container>
 
+                        <ng-container matColumnDef="copy_button">
+                            <mat-header-cell *matHeaderCellDef class="reference-container__table__button-block">
+                            </mat-header-cell>
+                            <mat-cell *matCellDef="let element" class="reference-container__table__button-block">
+                                <button mat-icon-button [cdkCopyToClipboard]="copyPartContent(element)"
+                                    class="reference-container__table__button">
+                                    <mat-icon svgIcon="fileCopy" matTooltip="Копіювати"></mat-icon>
+                                </button>
+                            </mat-cell>
+                        </ng-container>
+
                         <ng-container matColumnDef="transliteration">
                             <mat-header-cell *matHeaderCellDef>Транслітерація </mat-header-cell>
                             <mat-cell *matCellDef="let element" [innerHTML]="element.transliteration"></mat-cell>
@@ -160,7 +171,7 @@
                                 </button>
                                 <button mat-icon-button [cdkCopyToClipboard]="copyContent(element)"
                                     class="reference-container__table__button">
-                                    <mat-icon svgIcon="fileCopy" matTooltip="Копіювати"></mat-icon>
+                                    <mat-icon svgIcon="fileCopy" matTooltip="Копіювати з транслітерацією"></mat-icon>
                                 </button>
                             </mat-cell>
                         </ng-container>

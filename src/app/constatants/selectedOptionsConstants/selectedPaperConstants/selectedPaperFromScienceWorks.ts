@@ -21,7 +21,7 @@ export const SELECTED_PAPER_FROM_SCIENCE_WORKS: Array<TSelectParams> = [
   {
     title: "Принадлежність:",
     key: "copyrigth",
-    placeholder: "Одес. нац. акад. харч. технологій ",
+    placeholder: "Одес. нац. техн. університет",
     className: "col-lg-6 col-sm-6 col-md-6",
     required: true,
     validators: Validators.required,

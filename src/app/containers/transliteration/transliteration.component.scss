@@ -1,0 +1,77 @@
+@import "../../../stylesVariables.scss";
+
+.transliteration-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: $padBg $padLg;
+    background: $white;
+    min-height: 100vh;
+    &__title {
+      font-weight: 300;
+      text-align: center;
+    }
+    &__header {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      margin: $padLg 0;
+      &__text {
+        font-size: $fontBg;
+        line-height: 1.5em;
+      }
+    }
+    textarea {
+      border-color: $paleSky;
+      width: 100%;
+      border-radius: 5px;
+      resize: none;
+    }
+    &__create-button {
+      transition: 500ms;
+      text-align: center;
+      background: none;
+      background: #e7a96a;
+      color: $white;
+      margin-right: 20px;
+      &:hover {
+        background: $darkOrange;
+      }
+    }
+    &__link {
+      color: $dark;
+      font-size: $fontBg;
+      text-decoration: none;
+      &:hover {
+        color: $darkOrange;
+      }
+    }
+    &__actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .transliteration-container {
+      padding: $padBg 0;
+      &__header {
+        margin: 0;
+      }
+      &__actions{
+        margin-top: 0;
+      }
+
+      &__create-button {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+}

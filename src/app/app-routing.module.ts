@@ -4,6 +4,7 @@ import { HomeComponent } from "./containers/home/home.component";
 import { AboutComponent } from "./containers/about/about.component";
 import { ReferencesComponent } from "./containers/references/references.component";
 import { BibliographyComponent } from "./containers/bibliography/bibliography.component";
+import { TransliterationComponent } from "./containers/transliteration/transliteration.component";
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -16,6 +17,8 @@ const routes: Routes = [
     component: BibliographyComponent,
   },
   { path: "about", component: AboutComponent },
+  { path: "transliteration", component: TransliterationComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

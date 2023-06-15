@@ -37,6 +37,7 @@ import { HomeComponent } from "./containers/home/home.component";
 import { AboutComponent } from "./containers/about/about.component";
 import { BibliographyComponent } from "./containers/bibliography/bibliography.component";
 import { ReferencesComponent } from "./containers/references/references.component";
+import { TransliterationComponent } from './containers/transliteration/transliteration.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { ReferencesComponent } from "./containers/references/references.componen
     BibliographyComponent,
     ReferencesComponent,
     ViewerComponent,
+    TransliterationComponent,
   ],
   imports: [
     CommonModule,
